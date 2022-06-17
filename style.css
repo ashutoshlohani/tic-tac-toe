@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Press Start 2P', cursive;
+}
+
+body {
+   background-color: rgba(137, 43, 226, 0.904);
+   color: white;
+}
+
+.grid {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.box {
+   height: 8rem;
+   width: 8rem;
+}
+
+.firstRow,
+.secondRow,
+.thirdRow {
+   display: flex;
+   flex-direction: row;
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6 {
+   border-bottom: 0.4em solid white;
+}
+.b1,
+.b2,
+.b4,
+.b5,
+.b7,
+.b8 {
+   border-right: 0.4em solid white;
+}
+
+.hidden {
+   display: none;
+}
+
+.square {
+   background: transparent;
+   color: white;
+   height: 8rem;
+   width: 8rem;
+   border: none;
+   text-align: center;
+   font-size: 4em;
+   font-weight: bold;
+   line-height: 34px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.status {
+   font-size: 3rem;
+   position: absolute;
+   left: 50%;
+   top: 15%;
+   transform: translate(-50%, -50%);
+}
+
+.restart {
+   font-size: 5rem;
+   position: absolute;
+   left: 50%;
+   top: 85%;
+   transform: translate(-50%, -50%);
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+   .body {
+      font-size: 2rem;
+   }
+
+   .status {
+      font-size: 1.5rem;
+      padding-bottom: 3rem;
+   }
+
+   .restart {
+      font-size: 4rem;
+      padding-top: 3rem;
+   }
+
+   .box {
+      height: 7rem;
+      width: 7rem;
+   }
+}
